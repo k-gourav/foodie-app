@@ -17,7 +17,7 @@ const Body = () => {
  
 
   return (
-  <div className="body">
+  <div className="main">
     <div className="filter">
       <button
         className="filter-btn"

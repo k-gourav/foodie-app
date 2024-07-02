@@ -5,13 +5,9 @@ const Header = () => {
   const [userState, setUserState] = useState("Login");
 
   const changeName = () => {
-    if (userState === "Login") {
-      return setUserState("Logout");
-    }
-
-    return setUserState("Login");
+   (userState === "Login") ? setUserState("Logout") : setUserState("Login");
   };
-
+  
   return (
     <div className="header">
       <div className="logo-container">

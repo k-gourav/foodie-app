@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 body{
     min-height: 100vh;
-    font-family: "DM-Sans", sans-serif;
+    font-family: "Teachers", sans-serif;
 }
 .header{
     display: flex;
@@ -15,7 +15,7 @@ body{
     padding: 0 2rem;
 }
 .logo{
-    width: 90px;
+    width: 80px;
 }
 .nav-items{
     display: flex;
@@ -28,18 +28,23 @@ body{
     align-items: center;
     gap: 2.5rem;
     padding: 0 4rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 li a{
     text-decoration: none;
     color: black;
 }
 .login{
-    padding: 5px 10px;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: inherit;
 }
 .search{
     padding: 10px;
-    font-family: "DM Sans", sans-serif;
 }
 .restro-container{
     display: flex;
@@ -52,18 +57,25 @@ li a{
     flex-direction: column;
     align-items: center;
     gap: 0.3rem;
-    width: 300px;
+    width: 310px;
     padding: 1rem;
     background-color: rgba(247, 167, 121, 0.945);
     font-size: 1rem;
     box-shadow: 6px 6px rgba(236, 186, 78, 0.548);
+    font-weight: 500;
 }
 .res-logo{
     width: 100%;
     height: 300px;
 }
 .filter-btn{
-    margin: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2.4rem;
     cursor: pointer;
-    padding: 5px;
+    padding: 0.8rem 0.9rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
 }
