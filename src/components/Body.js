@@ -5,7 +5,13 @@ import { useEffect, useState } from "react";
 const Body = () => {
   const [restr, setRestr] = useState(resList);
   const [searchText, setSearchText] = useState("");
-  
+  const handleSearch = () => {
+    const searchedRestro = resList.filter((res) =>
+      res.resName.toLowerCase().includes(searchText.toLowerCase())
+    );
+    searchedRestro.length ? setRestr(searchedRestro) : setRestr([]);
+  };
+
   // useEffect(()=>{
   //   fetchData();
   // }, []);
@@ -20,8 +26,18 @@ const Body = () => {
     <div className="main">
       <div className="filter">
         <div className="search">
-          <input type="text" name="search-box" placeholder="Search" value={searchText} onChange={(e) => setSearchText(e.target.value)}/>
-          <button className="search-btn">Search</button>
+          <input
+            type="text"
+            name="search-box"
+            placeholder="Search"
+            onChange={(e) => setSearchText(e.target.value)}
+          />
+          <button
+            className="search-btn"
+            onClick={handleSearch}
+          >
+            Search
+          </button>
         </div>
         <button
           className="filter-btn"
