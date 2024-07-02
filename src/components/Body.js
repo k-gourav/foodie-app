@@ -38,6 +38,7 @@ const Body = () => {
           cuisine={element.cuisine}
           ratings={element.ratings}
           eta={element.eta}
+          price={element.price}
           imgLink={element.imgLink}
         />
       ))}
