@@ -38,7 +38,6 @@ li a{
 }
 li a:hover{
     color: rgb(206, 103, 48);
-
 }
 .login{
     padding: 0.6rem 0.8rem;
@@ -48,8 +47,33 @@ li a:hover{
     font-size: 1rem;
     font-family: inherit;
 }
+.filter{
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    margin-left: 2.4rem;
+    gap: 1.5rem;
+}
+input[type="text"]{
+    padding: 0.2rem 1rem;
+    border-radius: 6px;
+    border: 0.5px solid;
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight: 500;
+}
 .search{
-    padding: 10px;
+    display: flex;
+    gap: 1rem;
+}
+.search-btn{
+    cursor: pointer;
+    padding: 0.6rem 0.9rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 500;
 }
 .restro-container{
     display: flex;
@@ -77,15 +101,13 @@ li a:hover{
     padding-bottom: 0.5rem;
 }
 .filter-btn{
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    margin-left: 2.4rem;
     cursor: pointer;
     padding: 0.8rem 0.9rem;
     border: none;
     border-radius: 6px;
     font-size: 1rem;
     font-family: inherit;
+    font-weight: 500;
 }
 .footer{
     margin-top: 2rem;
