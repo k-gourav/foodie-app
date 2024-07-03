@@ -7,12 +7,18 @@
 body{
     min-height: 100vh;
     font-family: "Teachers", sans-serif;
+    scroll-behavior: smooth;
 }
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
+    padding-left: 3.5rem;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 1px 1px 1px rgba(45, 45, 44, 0.134);
 }
 .logo{
     width: 80px;
@@ -49,7 +55,7 @@ li a:hover{
 }
 .filter{
     display: flex;
-    margin-top: 0.5rem;
+    margin-top: 1.2rem;
     margin-bottom: 2rem;
     margin-left: 5%;
     gap: 6rem;
