@@ -52,10 +52,10 @@ li a:hover{
     margin-top: 0.5rem;
     margin-bottom: 2rem;
     margin-left: 5%;
-    gap: 1.5rem;
+    gap: 6rem;
 }
 input[type="text"]{
-    padding: 0.2rem 1rem;
+    padding: 3.5% 5%;
     border-radius: 6px;
     border: 0.5px solid;
     font-size: 1.1rem;
@@ -64,11 +64,11 @@ input[type="text"]{
 }
 .search{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 .search-btn{
     cursor: pointer;
-    padding: 0.6rem 0.9rem;
+    padding: 3.5% 6%;
     border: none;
     border-radius: 6px;
     font-size: 1rem;
@@ -91,6 +91,7 @@ input[type="text"]{
     font-size: 1rem;
     box-shadow: 3px 3px rgba(237, 133, 43, 0.816);
     font-weight: 500;
+    cursor: pointer;
 }
 .res-card p{
     padding-left: 0.6rem;
@@ -115,4 +116,14 @@ input[type="text"]{
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
+}
+@media only screen and  (max-width: 500px){
+    .restro-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .res-card{
+        width: 75%;
+    }
+    
 }
