@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 const Header = () => {
@@ -7,6 +8,10 @@ const Header = () => {
   const changeName = () => {
    (userState === "Login") ? setUserState("Logout") : setUserState("Login");
   };
+
+  useEffect(() => {
+    console.log("useEffect called only once") 
+  }, []);
   
   return (
     <div className="header">
@@ -16,16 +21,16 @@ const Header = () => {
       <div className="nav-items">
         <ul>
           <li>
-            <a href="">Home</a>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <a href="">About</a>
+            <Link to='/about'>About</Link>
           </li>
           <li>
-            <a href="">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <a href="">Cart</a>
+            <Link to="/">Cart</Link>
           </li>
           <button className="login" onClick={changeName}>
             {userState}
