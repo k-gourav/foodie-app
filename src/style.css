@@ -42,6 +42,10 @@ li a{
     color: black;
     padding: 6px;
 }
+a{
+    display: block;
+    object-fit: cover;
+}
 li a:hover{
     color: rgb(206, 103, 48);
 }

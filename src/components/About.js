@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
 
-export default function About() {
-  return (
-    <>
-    <div>
-        <p>Hello, this is about page</p>
-    </div>
-    </>
-  )
+class About extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <div>
+        <h2>About Section</h2>
+        <p>This is the About page</p>
+
+      </div>
+    )
+  }
+
 }
+
+export default About;
