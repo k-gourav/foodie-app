@@ -1,6 +1,9 @@
-# Contact Form
+# Foodie App
 
-A responsive contact form component that handles form validation and submission with feedback for users. Built with React, this project showcases form validation, accessibility, and smooth user interaction for handling contact inquiries.
+The Foodie App is a react-based web application that allows users to explore, search for, and filter their favorite restaurants. <br>
+
+![download](https://github.com/user-attachments/assets/01e98fc2-16c9-450e-8916-7989f3d6c76c)
+
 
 ## Features
 
